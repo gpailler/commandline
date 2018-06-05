@@ -1,0 +1,6 @@
+[submodule "lib/CSharpx"]
+	path = lib/CSharpx
+	url = https://github.com/gsscoder/CSharpx.git
+[submodule "lib/railwaysharp"]
+	path = lib/railwaysharp
+	url = https://github.com/gsscoder/railwaysharp.git
