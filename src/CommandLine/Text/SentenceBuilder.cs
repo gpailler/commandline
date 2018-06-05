@@ -34,6 +34,11 @@ namespace CommandLine.Text
         public abstract Func<string> RequiredWord { get; }
 
         /// <summary>
+        /// Gets a delegate that returns the word 'Default:'.
+        /// </summary>
+        public abstract Func<string> DefaultWord { get; }
+
+        /// <summary>
         /// Gets a delegate that returns that errors block heading text.
         /// </summary>
         public abstract Func<string> ErrorsHeadingText { get; }
@@ -72,6 +77,11 @@ namespace CommandLine.Text
             public override Func<string> RequiredWord
             {
                 get { return () => "Required."; }
+            }
+
+            public override Func<string> DefaultWord
+            {
+                get { return () => "Default:"; }
             }
 
             public override Func<string> ErrorsHeadingText
